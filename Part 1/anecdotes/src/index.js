@@ -14,6 +14,7 @@ const App = (props) => {
   const handleClickNewAnecdote = () => {
     setSelected(Math.floor(Math.random()*props.anecdotes.length));
   }
+  
   const handleClickVote = () => {
     const newVotes = { ...votes };
     newVotes[selected] += 1;
